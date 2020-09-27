@@ -16,6 +16,15 @@ inputTarefa.onkeypress = function(evento){
         var li = document.createElement('li');
         li.innerText = tarefa;
 
+        var newButton = document.createElement("button");
+            newButton.innerHTML = 'Deletar';
+
+            li.append(newButton);
+
+            newButton.onclick = function(){
+                li.remove(li);
+            }
+
 //        li.style.color = 'red';
 //
 //        li.onclick = function(){
